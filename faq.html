@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FAQ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .bcontent {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container bcontent">
+        <h2>F A Q</h2>
+        <hr />
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse">
+                        show/hide everything
+                    </button>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="collasediv">
+                                <div class="card card-body">
+                                   <h4>all questions and answers are below</h4> 
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+                            question 1
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse multi-collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        ans 1
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo">
+                            question 2
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse multi-collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        ans 2
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree">
+                            question 3
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse  multi-collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        ans 3.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-success" type="button" data-toggle="collapse" data-target=".multi-collapse">
+            show/hide everything
+        </button>
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="collasediv">
+                    <div class="card card-body">
+                        all questions and answers are above
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ 
+</body>
+
+</html>
